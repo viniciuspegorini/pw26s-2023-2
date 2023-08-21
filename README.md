@@ -27,11 +27,12 @@
 
 ## Projetos:
 
+
 ### aula1
-- Revisão do conteúdo da disciplina Programação para Web - PW25S.
+- Documentação da API REST com Open API 3.0 + versionamento do Banco de Dados com Flyway.
 
 ### aula2
-- Admininstração das aplicações com Spring Boot Admin e registro de Log.
+- Admininstração das aplicações com Spring Boot Admin e Registros de Log.
 
 ### aula3
 - Adição de permissões de usuário. Criação de uma classe para representar as permissões de usuário e associação da mesma na entidade de usuário.
@@ -77,12 +78,10 @@
 - Grails 
 - Play 
 - Tapestry 
-
 - Pyramid
 - Wicket
 - TurboGears
 - Spark
-- Laravel 
 - Ionic 
 - Sails
 - Bootfaces
@@ -95,13 +94,17 @@
 - Lit
 - Node.js
 - Quarkus + Kotling
-- Svelte
 - Cypress
 - .Net + C#
 - Go
-- Vue.js
 - Node.js + Nest.js
 - Flask
+- Laravel ==========> Keslley
+- Node.js ==========> Felipe Zawadski
+- Svelte  ==========> Felipe Maccari 
+- Vue.js  ==========> Raul
+- Nest.js ==========> Danieli
+
 
 1. [Deverá ser entregue] Desenvolver uma apresentação (PPT, PDF ou Readme.MD no git) sobre:
 - As vantagens e desvantagens da linguagem, framework e/ou plataforma. 
