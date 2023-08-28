@@ -104,7 +104,7 @@
 - Svelte  ==========> Felipe Maccari 
 - Vue.js  ==========> Raul
 - Nest.js ==========> Danieli
-
+- KMM + Kotlin =====> Matheus
 
 1. [Deverá ser entregue] Desenvolver uma apresentação (PPT, PDF ou Readme.MD no git) sobre:
 - As vantagens e desvantagens da linguagem, framework e/ou plataforma. 

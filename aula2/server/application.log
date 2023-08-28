@@ -366,3 +366,59 @@ Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletReque
 2023-08-21T16:54:58.717-03:00  WARN 32520 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 2023-08-21T16:54:58.718-03:00  INFO 32520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-08-21T16:54:58.874-03:00  INFO 32520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-08-21T19:38:19.784-03:00  INFO 3276 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Starting ServerApplication using Java 17 with PID 3276 (D:\dev\utfpr\aulas\pw26s-2023-2\aula2\server\target\classes started by vinic in D:\dev\utfpr\aulas\pw26s-2023-2\aula2\server)
+2023-08-21T19:38:19.786-03:00  INFO 3276 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : The following 1 profile is active: "dev"
+2023-08-21T19:38:19.831-03:00  INFO 3276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-21T19:38:19.831-03:00  INFO 3276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-21T19:38:21.066-03:00  INFO 3276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-21T19:38:21.132-03:00  INFO 3276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2023-08-21T19:38:21.737-03:00  INFO 3276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-21T19:38:21.747-03:00  INFO 3276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-21T19:38:21.747-03:00  INFO 3276 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-21T19:38:21.823-03:00  INFO 3276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-21T19:38:21.824-03:00  INFO 3276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1992 ms
+2023-08-21T19:38:21.929-03:00  INFO 3276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-21T19:38:22.163-03:00  INFO 3276 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pw26s-dev user=SA
+2023-08-21T19:38:22.165-03:00  INFO 3276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-21T19:38:22.178-03:00  INFO 3276 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pw26s-dev'
+2023-08-21T19:38:22.349-03:00  INFO 3276 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
+2023-08-21T19:38:22.349-03:00  INFO 3276 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2023-08-21T19:38:22.349-03:00  INFO 3276 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : 
+2023-08-21T19:38:22.372-03:00  INFO 3276 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:pw26s-dev (H2 2.1)
+2023-08-21T19:38:22.450-03:00  INFO 3276 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2023-08-21T19:38:22.455-03:00  INFO 3276 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.030s)
+2023-08-21T19:38:22.462-03:00  INFO 3276 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2023-08-21T19:38:22.493-03:00  INFO 3276 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2023-08-21T19:38:22.500-03:00  INFO 3276 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.0 - Init"
+2023-08-21T19:38:22.518-03:00  INFO 3276 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1.1 - Data"
+2023-08-21T19:38:22.525-03:00  INFO 3276 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v1.1 (execution time 00:00.035s)
+2023-08-21T19:38:22.581-03:00  INFO 3276 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-21T19:38:22.639-03:00  INFO 3276 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-21T19:38:22.641-03:00  INFO 3276 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-21T19:38:22.648-03:00  WARN 3276 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-08-21T19:38:22.760-03:00  INFO 3276 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-21T19:38:22.881-03:00  INFO 3276 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-21T19:38:23.112-03:00  INFO 3276 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-21T19:38:23.650-03:00  INFO 3276 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-21T19:38:23.653-03:00  INFO 3276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-21T19:38:24.125-03:00  INFO 3276 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-08-21T19:38:24.249-03:00  WARN 3276 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-08-21T19:38:24.358-03:00  INFO 3276 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a23bf4b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d0970d0, org.springframework.security.web.context.SecurityContextHolderFilter@5b5c536b, org.springframework.security.web.header.HeaderWriterFilter@49ea7890, org.springframework.security.web.authentication.logout.LogoutFilter@6952b942, br.edu.utfpr.pb.pw26s.server.security.JWTAuthenticationFilter@7ca77c81, br.edu.utfpr.pb.pw26s.server.security.JWTAuthorizationFilter@8505c3f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69089a54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@218bef7b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ffe7399, org.springframework.security.web.session.SessionManagementFilter@7a3040a0, org.springframework.security.web.access.ExceptionTranslationFilter@78fd9e75, org.springframework.security.web.access.intercept.AuthorizationFilter@29f1cf90]
+2023-08-21T19:38:24.785-03:00  INFO 3276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-21T19:38:24.849-03:00  INFO 3276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-21T19:38:24.863-03:00  INFO 3276 --- [restartedMain] b.e.u.pb.pw26s.server.ServerApplication  : Started ServerApplication in 5.486 seconds (process running for 6.404)
+2023-08-21T19:38:25.308-03:00  INFO 3276 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as da6c8b6a96cd
+2023-08-21T19:38:25.360-03:00  INFO 3276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-21T19:38:25.360-03:00  INFO 3276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-21T19:38:25.362-03:00  INFO 3276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-21T19:42:03.193-03:00  WARN 3276 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.zaxxer.hikari.pool.HikariPool
+2023-08-21T19:47:31.345-03:00  INFO 3276 --- [http-nio-8080-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [g_state={"i_l":2,"i_p":1686794156169}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2023-08-21T19:47:31.986-03:00  WARN 3276 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [messages/messages] not found for MessageSource: Can't find bundle for base name messages/messages, locale en_US
+2023-08-21T19:48:20.425-03:00  WARN 3276 --- [http-nio-8080-exec-8] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [messages/messages] not found for MessageSource: Can't find bundle for base name messages/messages, locale en_US
+2023-08-21T19:53:40.365-03:00  WARN 3276 --- [http-nio-8080-exec-1] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [messages/messages] not found for MessageSource: Can't find bundle for base name messages/messages, locale en_US
+2023-08-21T19:53:41.112-03:00  WARN 3276 --- [http-nio-8080-exec-10] o.s.c.s.ResourceBundleMessageSource      : ResourceBundle [messages/messages] not found for MessageSource: Can't find bundle for base name messages/messages, locale en_US
+2023-08-21T20:12:09.945-03:00  INFO 3276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-08-21T20:12:10.331-03:00  WARN 3276 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-08-21T20:12:10.333-03:00  INFO 3276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-08-21T20:12:10.491-03:00  INFO 3276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

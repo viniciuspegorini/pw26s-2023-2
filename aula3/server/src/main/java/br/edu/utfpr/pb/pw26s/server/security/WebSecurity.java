@@ -1,6 +1,6 @@
-package br.edu.utfpr.pb.pw25s.server.security;
+package br.edu.utfpr.pb.pw26s.server.security;
 
-import br.edu.utfpr.pb.pw25s.server.service.AuthService;
+import br.edu.utfpr.pb.pw26s.server.service.AuthService;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -32,7 +32,6 @@ public class WebSecurity {
         this.authenticationEntryPoint = authenticationEntryPoint;
     }
 
-// https://github.com/viniciuspegorini/pw26s-2023-2
 
     @Bean
     @SneakyThrows
@@ -46,7 +45,6 @@ public class WebSecurity {
 
         //Configuração para funcionar o console do H2.
         http.headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable));
-
         http.csrf(AbstractHttpConfigurer::disable);
         http.exceptionHandling(exceptionHandling -> exceptionHandling.authenticationEntryPoint(authenticationEntryPoint));
         http.cors(AbstractHttpConfigurer::disable);
@@ -54,8 +52,8 @@ public class WebSecurity {
                 .requestMatchers(antMatcher(HttpMethod.POST, "/users/**")).permitAll()
                 .requestMatchers(antMatcher("/h2-console/**")).permitAll()
                 .requestMatchers(antMatcher("/error/**")).permitAll()
-                .requestMatchers(antMatcher("/v3/**")).permitAll()
-                .requestMatchers(antMatcher("/swagger-ui/**")).permitAll()
+                .requestMatchers(antMatcher("/actuator/**")).permitAll()
+
                 .anyRequest().authenticated()
         );
         http.authenticationManager(authenticationManager)
