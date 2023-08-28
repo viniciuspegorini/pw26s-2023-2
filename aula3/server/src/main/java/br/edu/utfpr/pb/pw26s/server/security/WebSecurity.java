@@ -54,6 +54,15 @@ public class WebSecurity {
                 .requestMatchers(antMatcher("/error/**")).permitAll()
                 .requestMatchers(antMatcher("/actuator/**")).permitAll()
 
+                // Somente usuários com permissão de admin podem acessar /products (qualquer requisição HTTP)
+                .requestMatchers(antMatcher("/products/**")).hasAnyRole("ADMIN")
+
+                .requestMatchers(antMatcher(HttpMethod.GET, "/categories/**")).hasAnyRole("ADMIN", "USER")
+
+                .requestMatchers(antMatcher("/categories/**")).hasAnyRole("USER")
+
+                .requestMatchers(antMatcher("/users/**")).hasAnyRole("ADMIN")
+
                 .anyRequest().authenticated()
         );
         http.authenticationManager(authenticationManager)
