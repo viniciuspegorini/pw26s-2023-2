@@ -1,3 +1,3 @@
-# Revisão da disciplina Programação para Web - PW25S
+# Documentação da API REST com Open API 3.0 e versionamento do Banco de Dados com Flyway.
 
-Os conteúdos das aplicações cliente e servidor estão nas respectivas pastas, descritos no arquivo README.md de cada uma.
+ Nesta aula será realizada a documentação da API REST e versionamento do banco de dados. Ambas as modificações foram realizadas no projeto **server** e estão descritas no arquivo Readme.md na pasta raiz do projeto. 

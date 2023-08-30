@@ -99,9 +99,11 @@
 - Go
 - Node.js + Nest.js
 - Flask
+- Svelte
+- FastApi
 - Laravel ==========> Keslley
 - Node.js ==========> Felipe Zawadski
-- Svelte  ==========> Felipe Maccari 
+- Astro  ==========> Felipe Maccari 
 - Vue.js  ==========> Raul
 - Nest.js ==========> Danieli
 - KMM + Kotlin =====> Matheus
