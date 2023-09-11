@@ -53,8 +53,11 @@ public class WebSecurity {
         //Configuração para funcionar o console do H2.
         http.headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable));
         http.csrf(AbstractHttpConfigurer::disable);
+
         // Adiciona configuração de CORS
         http.cors(cors -> corsConfigurationSource());
+
+
         http.exceptionHandling(exceptionHandling -> exceptionHandling.authenticationEntryPoint(authenticationEntryPoint));
         http.authorizeHttpRequests((authorize) -> authorize
                 .requestMatchers(antMatcher(HttpMethod.POST, "/users/**")).permitAll()

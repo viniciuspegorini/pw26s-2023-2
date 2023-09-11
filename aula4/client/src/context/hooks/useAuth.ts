@@ -30,7 +30,7 @@ export function useAuth() {
       api.defaults.headers.common[
         "Authorization"
       ] = `Bearer ${response.token}`;
-      console.log(response.user);
+      
       setAuthenticatedUser(response.user);
       setAuthenticated(true);
   }
